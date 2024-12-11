@@ -9,10 +9,10 @@ const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false); 
 
   	return (
-    	<div className="relative text-gray-200 ">
+    	<div className="relative text-gray-200">
       		<button
         		onClick={() => setIsOpen(!isOpen)}
-        		className={`text-3xl fixed top-6 left-6 z-50 hover:text-teal-400 ${isOpen ? '' : 'text-gray-900 dark:text-gray-200'}`}
+        		className={`sticky py-6 text-3xl top-6 left-6 z-50 hover:text-teal-400 ${isOpen ? '' : 'text-gray-900 dark:text-gray-200'}`}
       		>
         		<AiOutlineMenu />
       		</button>

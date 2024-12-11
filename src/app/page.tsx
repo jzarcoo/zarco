@@ -13,7 +13,7 @@ export default function Home() {
 		<div className={darkMode ? "dark" : ""}>
 			<div className="text-gray-900 dark:text-gray-200 dark:bg-gray-900 bg-gray-200 font-[family-name:var(--font-geist-sans)]">
 				<Navbar />
-				<main className="h-screen grid place-items-center">
+				<main>
 					<Header />
 				</main>
 				<DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode} />

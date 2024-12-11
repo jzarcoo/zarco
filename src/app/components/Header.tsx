@@ -15,8 +15,8 @@ const description = "Web developer with a passion for programming, AI, and cyber
 
 const Header = () => {
     return (
-        <header id="home">
-            <div className="text-center p-6">
+        <header id="home" className="min-h-screen grid place-items-center">
+            <div className="text-center px-6">
                 <h2 className="py-2 md:text-6xl text-5xl text-teal-600 font-medium dark:text-teal-400">
                     {name}
                 </h2>
@@ -31,7 +31,7 @@ const Header = () => {
                     <HeaderIcon icon={<AiFillGithub />} link="https://github.com/jzarcoo" title="jzarcoo" />
                     <HeaderIcon icon={<AiFillMail />} link="mailto:zarco@ieee.org" title="zarco@ieee.org" />
                 </div>
-                <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+                <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden my-20 md:h-96 md:w-96">
                     <Image src={me} style={{ objectFit: 'cover' }} alt="me" priority />
                 </div>
             </div>
