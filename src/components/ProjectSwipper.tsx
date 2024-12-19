@@ -25,7 +25,6 @@ import {
     RiJavascriptFill 
 } from "react-icons/ri";
 import { SiMariadb } from "react-icons/si";
-import { Project } from 'next/dist/build/swc/types';
 
 
 const toolsMap: { [key: string]: React.ReactNode } = {
