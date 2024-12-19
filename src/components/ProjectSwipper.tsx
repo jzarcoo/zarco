@@ -26,6 +26,7 @@ import {
 } from "react-icons/ri";
 import { SiMariadb } from "react-icons/si";
 
+const basePath = '/zarco/public/';
 
 const toolsMap: { [key: string]: React.ReactNode } = {
     Bootstrap : <FaBootstrap size={24} />,
@@ -39,15 +40,6 @@ const toolsMap: { [key: string]: React.ReactNode } = {
     PHP : <FaPhp size={24} />,
     Python : <FaPython size={24} />,
 };
-
-interface SlideProps {
-    img: string;
-    title: string;
-    description: string;
-    tools: string[];
-    repoLink: string;
-    siteLink: string;
-}
 
 const Logos = ({ tools } : { tools: string[] }) => {
     return (
@@ -66,12 +58,21 @@ const Logos = ({ tools } : { tools: string[] }) => {
 
 };
 
+interface SlideProps {
+    img: string;
+    title: string;
+    description: string;
+    tools: string[];
+    repoLink: string;
+    siteLink: string;
+}
+
 const Slide = ({ img, title, description, tools, repoLink, siteLink } : SlideProps) => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
             <div className="absolute inset-0">
                 <Image 
-                    src={'/zarco/public/' + img}
+                    src={basePath + img}
                     alt={title}
                     layout='fill'
                     objectFit='cover'
@@ -79,7 +80,7 @@ const Slide = ({ img, title, description, tools, repoLink, siteLink } : SlidePro
                     className="blur-md"
                 />
                 <Image 
-                    src={img}
+                    src={basePath + img}
                     alt={title}
                     layout='fill'
                     objectFit='contain'
@@ -102,7 +103,6 @@ const Slide = ({ img, title, description, tools, repoLink, siteLink } : SlidePro
 };
 
 interface ProjectProps {
-    // json
     projects: SlideProps[];
 }
 

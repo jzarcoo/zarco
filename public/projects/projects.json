@@ -1,6 +1,6 @@
 [
   {
-    "img": "mazesimulator.png",
+    "img": "projects/mazesimulator.png",
     "title": "Maze Simulator",
     "description": "A program that generates, solves, and visualizes mazes using various algorithms.",
     "tools": ["Java"],
@@ -8,7 +8,7 @@
     "siteLink": "https://github.com/jzarcoo/MazeSimulator"
   }, 
   {
-    "img": "portalVaquita.png",
+    "img": "projects/portalVaquita.png",
     "title": "Portal Vaquita",
     "description": "A scalable marketplace app using design patterns, sockets, threads, and unit testing",
     "tools": ["Java"],
@@ -16,7 +16,7 @@
     "siteLink": "https://github.com/jzarcoo/Portal-Vaquita"
   },
   {
-    "img": "c6.jpeg",
+    "img": "projects/c6.jpeg",
     "title": "Coyo6",
     "description": "A virtual classroom system for UNAM students to address educational needs during the pandemic",
     "tools": ["PHP", "MariaDB", "JavaScript", "Bootstrap", "CSS", "HTML"],
