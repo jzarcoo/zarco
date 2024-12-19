@@ -31,11 +31,11 @@ const Navbar = () => {
         		</button>
 
 				<ul className="space-y-8 pt-20 px-1">
-					<NavbarItem href="/" text="Home" />
+					<NavbarItem href="/zarco" text="Home" />
 				</ul>
 
 				<ul className="space-y-8 pt-10 px-1">
-					<NavbarItem href="/projects" text="Projects" />
+					<NavbarItem href="/zarco/projects" text="Projects" />
 				</ul>
       		</div>
 

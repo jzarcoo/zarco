@@ -106,7 +106,7 @@ interface ProjectProps {
     projects: SlideProps[];
 }
 
-const Projects = ({ projects } : ProjectProps) => {
+const ProjectSwipper = ({ projects } : ProjectProps) => {
     return (
         <Swiper className=' min-h-screen max-h-screen relative'
             direction="vertical"
@@ -136,4 +136,4 @@ const Projects = ({ projects } : ProjectProps) => {
     );
 }
 
-export default Projects;
+export default ProjectSwipper;
