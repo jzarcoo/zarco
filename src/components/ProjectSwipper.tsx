@@ -71,7 +71,7 @@ const Slide = ({ img, title, description, tools, repoLink, siteLink } : SlidePro
         <div className="flex flex-col items-center justify-center min-h-screen">
             <div className="absolute inset-0">
                 <Image 
-                    src={img}
+                    src={'/zarco/public/' + img}
                     alt={title}
                     layout='fill'
                     objectFit='cover'
