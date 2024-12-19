@@ -26,8 +26,6 @@ import {
 } from "react-icons/ri";
 import { SiMariadb } from "react-icons/si";
 
-const basePath = '/zarco/public/';
-
 const toolsMap: { [key: string]: React.ReactNode } = {
     Bootstrap : <FaBootstrap size={24} />,
     C : <FaC size={24} />,
@@ -72,7 +70,7 @@ const Slide = ({ img, title, description, tools, repoLink, siteLink } : SlidePro
         <div className="flex flex-col items-center justify-center min-h-screen">
             <div className="absolute inset-0">
                 <Image 
-                    src={basePath + img}
+                    src={'/zarco/public/' + img}
                     alt={title}
                     layout='fill'
                     objectFit='cover'
@@ -80,7 +78,7 @@ const Slide = ({ img, title, description, tools, repoLink, siteLink } : SlidePro
                     className="blur-md"
                 />
                 <Image 
-                    src={basePath + img}
+                    src={'/zarco/public/' + img}
                     alt={title}
                     layout='fill'
                     objectFit='contain'
