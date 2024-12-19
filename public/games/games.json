@@ -1,0 +1,43 @@
+[
+  {
+    "img": "/games/exoarcade.png",
+    "title": "Exo-Arcade",
+    "description": "An immersive educational game crafted to teach students about exoplanets through an array of fun mini-games",
+    "tools": ["JavaScript", "Python", "Bootstrap", "Gemini API", "CSS", "HTML"],
+    "repoLink": "https://github.com/jzarcoo/EXO-ARCADE",
+    "siteLink": "https://github.com/jzarcoo/EXO-ARCADE"
+  },
+  {
+    "img": "/games/elescapedelosnuevecirculos.png",
+    "title": "El Escape de los Nueve Círculos",
+    "description": "A maze-solving video game inspired by 'The Divine Comedy'",
+    "tools": ["C"],
+    "repoLink": "https://github.com/jzarcoo/El-Escape-de-los-Nueve-Circulos",
+    "siteLink": "https://github.com/jzarcoo/El-Escape-de-los-Nueve-Circulos"
+  },
+  {
+    "img": "/games/frogger.jpeg",
+    "title": "Frogger",
+    "description": "A classic arcade game with a modern twist",
+    "tools": ["JavaScript", "HTML", "CSS"],
+    "repoLink": "https://github.com/jzarcoo/Frogger",
+    "siteLink": "https://github.com/jzarcoo/Frogger"
+  },
+  {
+    "img": "/games/juego15.png",
+    "title": "Juego 15",
+    "description": "A sliding puzzle game with a twist",
+    "tools": ["JavaScript", "HTML", "CSS"],
+    "repoLink": "https://github.com/jzarcoo/ProyectosWeb2022",
+    "siteLink": "https://github.com/jzarcoo/ProyectosWeb2022"
+  },
+  {
+    "img": "/games/tetris.png",
+    "title": "Tetris",
+    "description": "A classic arcade game with a modern twist",
+    "tools": ["JavaScript", "HTML", "CSS"],
+    "repoLink": "https://github.com/jzarcoo/ProyectosWeb2022",
+    "siteLink": "https://github.com/jzarcoo/ProyectosWeb2022"
+  }
+]
+  

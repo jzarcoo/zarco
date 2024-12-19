@@ -16,6 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
 	title: "Antonio Zarco",
 	description: "Zarco's Portafolio",
+	icons: {
+		icon: "./favicon.ico",
+	},
 };
 
 export default function RootLayout({
