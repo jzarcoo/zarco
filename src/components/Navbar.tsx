@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 import { 
 	AiOutlineClose, 
@@ -12,7 +13,7 @@ const Navbar = () => {
     	<div className="relative text-gray-200">
       		<button
         		onClick={() => setIsOpen(!isOpen)}
-        		className={`sticky py-6 text-3xl top-6 left-6 z-50 hover:text-teal-400 ${isOpen ? '' : 'text-gray-900 dark:text-gray-200'}`}
+        		className={`fixed pb-6 text-3xl top-6 left-6 z-50 hover:text-teal-400 ${isOpen ? '' : 'text-gray-900 dark:text-gray-200'}`}
       		>
         		<AiOutlineMenu />
       		</button>
@@ -30,13 +31,13 @@ const Navbar = () => {
           			<AiOutlineClose />
         		</button>
 
-				<ul className="space-y-8 pt-20 px-1">
-					<NavbarItem href="/zarco" text="Home" />
-				</ul>
 
-				<ul className="space-y-8 pt-10 px-1">
-					<NavbarItem href="/zarco/projects" text="Projects" />
-				</ul>
+                <ul className="space-y-8 pt-20 px-1">
+                <NavbarItem href="/" text="Home" />
+                <NavbarItem href="/projects#projects" text="Projects" />
+                <NavbarItem href="/projects#machine-learning" text="ML" />
+                <NavbarItem href="/projects#games" text="Games" />
+                </ul>
       		</div>
 
 			{isOpen && (

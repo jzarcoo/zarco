@@ -1,0 +1,18 @@
+[
+  {
+    "img": "fakenewsdetection.png",
+    "title": "Fake News Detection",
+    "description": "A project for analyzing and predicting the veracity of news articles using supervised learning, NLP techniques, and transformer-based models such as BERT.",
+    "tools": ["Python", "TensorFlow", "Keras", "Plotly", "NetworkX", "Pandas", "NumPy", "Scikit-learn"],
+    "repoLink": "https://github.com/jzarcoo/FakeNewsDetection",
+    "siteLink": "https://www.canva.com/design/DAG-j3EfYGc/NVlZE4TYpKN2xCv9G9Uyxg/edit?utm_content=DAG-j3EfYGc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+  },
+  {
+    "img": "kanjiji.png",
+    "title": "Kanji Ji",
+    "description": "A project focused on predicting and identifying kanji characters using neural networks to facilitate Japanese language learning.",
+    "tools": ["Python", "PyTorch", "Streamlit", "Pandas", "NumPy", "Scikit-learn"],
+    "repoLink": "https://kanji-ji.com/",
+    "siteLink": "https://kanji-ji.com/"
+  }
+]

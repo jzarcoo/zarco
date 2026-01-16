@@ -17,14 +17,33 @@ import {
     FaJava,
     FaPaperclip,
     FaPhp,
-    FaPython
+    FaPython,
+    FaReact
 } from 'react-icons/fa';
 import { FaC } from "react-icons/fa6";
+import { PiNetworkX } from "react-icons/pi";
+import { 
+    SiPytorch, 
+    SiStreamlit,
+    SiNumpy,
+    SiPandas,
+    SiSupabase,
+    SiTypescript,
+    SiMariadb,
+    SiApachemaven,
+    SiScikitlearn,
+    SiPlotly,
+    SiTensorflow,
+    SiKeras,
+    SiFlutter,
+    SiDart
+} from "react-icons/si";
 import { 
     RiGeminiFill,
-    RiJavascriptFill 
+    RiJavascriptFill,
+    RiNextjsFill,
+    RiTailwindCssFill
 } from "react-icons/ri";
-import { SiMariadb } from "react-icons/si";
 
 const toolsMap: { [key: string]: React.ReactNode } = {
     Bootstrap : <FaBootstrap size={24} />,
@@ -37,6 +56,23 @@ const toolsMap: { [key: string]: React.ReactNode } = {
     MariaDB : <SiMariadb size={24} />,
     PHP : <FaPhp size={24} />,
     Python : <FaPython size={24} />,
+    PyTorch : <SiPytorch size={24} />,
+    Streamlit : <SiStreamlit size={24} />,
+    Pandas : <SiPandas size={24} />,
+    NumPy : <SiNumpy size={24} />,
+    Supabase : <SiSupabase size={24} />,
+    Typescript : <SiTypescript size={24} />,
+    React : <FaReact size={24} />,
+    "Next.js" : <RiNextjsFill size={24} />,
+    Tailwind : <RiTailwindCssFill size={24} />,
+    Maven : <SiApachemaven size={24} />,
+    "Scikit-learn" : <SiScikitlearn size={24} />,
+    Plotly : <SiPlotly size={24} />,
+    TensorFlow : <SiTensorflow size={24} />,
+    Keras : <SiKeras size={24} />,
+    NetworkX : <PiNetworkX size={24} />,
+    Flutter : <SiFlutter size={24} />,
+    Dart : <SiDart size={24} />
 };
 
 const Logos = ({ tools } : { tools: string[] }) => {
@@ -72,17 +108,21 @@ const Slide = ({ img, title, description, tools, repoLink, siteLink } : SlidePro
                 <Image 
                     src={img}
                     alt={title}
-                    layout='fill'
-                    objectFit='cover'
-                    objectPosition='center'
+                    fill
+                    style={{
+                        objectFit: "cover",
+                        objectPosition: "center",
+                    }}
                     className="blur-md"
                 />
                 <Image 
                     src={img}
                     alt={title}
-                    layout='fill'
-                    objectFit='contain'
-                    objectPosition='center'
+                    fill
+                    style={{
+                        objectFit: "contain",
+                        objectPosition: "center",
+                    }}
                 />
             </div>
             <div className="absolute max-w-sm p-6 bg-gray-100 border border-gray-200 rounded-lg shadow-md shadow-gray-800 dark:shadow-gray-800 hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">

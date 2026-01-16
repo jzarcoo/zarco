@@ -16,6 +16,14 @@
     "siteLink": "https://github.com/jzarcoo/El-Escape-de-los-Nueve-Circulos"
   },
   {
+    "img": "2048.png",
+    "title": "2048",
+    "description": "A classic arcade game with a modern twist",
+    "tools": ["JavaScript", "HTML", "CSS", "React"],
+    "repoLink": "https://github.com/jzarcoo/2048-game",
+    "siteLink": "https://github.com/jzarcoo/2048-game"
+  },
+  {
     "img": "frogger.jpeg",
     "title": "Frogger",
     "description": "A classic arcade game with a modern twist",

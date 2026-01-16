@@ -1,16 +1,19 @@
-interface NavbarItemProps {
-    href: string;
-    text: string;
+import Link from "next/link";
+
+interface Props {
+  href: string;
+  text: string;
 }
 
-const NavbarItem = ({ href, text }: NavbarItemProps) => {
-    return (
-        <li>
-            <a href={href} className="text-2xl hover:text-teal-400">
-                {text}
-            </a>
-        </li>
-    );
-};
-
-export default NavbarItem;
+export default function NavbarItem({ href, text }: Props) {
+  return (
+    <li>
+      <Link
+        href={href}
+        className="text-2xl hover:text-teal-400"
+      >
+        {text}
+      </Link>
+    </li>
+  );
+}

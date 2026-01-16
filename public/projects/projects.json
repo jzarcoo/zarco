@@ -3,15 +3,23 @@
     "img": "mazesimulator.png",
     "title": "Maze Simulator",
     "description": "A program that generates, solves, and visualizes mazes using various algorithms.",
-    "tools": ["Java"],
+    "tools": ["Java", "Maven"],
     "repoLink": "https://github.com/jzarcoo/MazeSimulator",
     "siteLink": "https://github.com/jzarcoo/MazeSimulator"
+  }, 
+  {
+    "img": "kanjijiapp.jpg",
+    "title": "Kanji Ji App",
+    "description": "A kanji dictionary web app to help users learn and explore Japanese kanji characters.",
+    "tools": ["Typescript", "Supabase", "Next.js", "React", "Tailwind"],
+    "repoLink": "https://kanji-ji.com/",
+    "siteLink": "https://kanji-ji.com/"
   }, 
   {
     "img": "portalVaquita.png",
     "title": "Portal Vaquita",
     "description": "A scalable marketplace app using design patterns, sockets, threads, and unit testing",
-    "tools": ["Java"],
+    "tools": ["Java", "Maven"],
     "repoLink": "https://github.com/jzarcoo/Portal-Vaquita",
     "siteLink": "https://github.com/jzarcoo/Portal-Vaquita"
   },
@@ -22,5 +30,13 @@
     "tools": ["PHP", "MariaDB", "JavaScript", "Bootstrap", "CSS", "HTML"],
     "repoLink" : "https://github.com/jzarcoo/Coyo6",
     "siteLink": "https://github.com/jzarcoo/Coyo6"
+  },
+  {
+    "img": "ocr.jpeg",
+    "title": "Optical Character Recognition",
+    "description": "A project that captures or selects images, extracts text in real time using google_mlkit_text_recognition, and reads it aloud via text-to-speech (TTS).",
+    "tools": ["Dart", "Flutter"],
+    "repoLink": "https://github.com/jzarcoo/ocr",
+    "siteLink": "https://github.com/jzarcoo/ocr"
   }
 ]
