@@ -7,8 +7,10 @@ const nextConfig: NextConfig = {
 
   output: "export",
 
+  // basePath alone prefixes routes and asset URLs for the GitHub Pages project
+  // site (jzarcoo.github.io/zarco). A separate assetPrefix added a duplicate
+  // slash to next/image src URLs, so it is intentionally omitted.
   basePath: isProd ? "/zarco" : "",
-  assetPrefix: isProd ? "/zarco/" : "",
 
   images: {
     unoptimized: true,

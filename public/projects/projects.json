@@ -1,41 +1,57 @@
 [
   {
-    "img": "mazesimulator.png",
-    "title": "Maze Simulator",
-    "description": "A program that generates, solves, and visualizes mazes using various algorithms.",
-    "tools": ["Java", "Maven"],
-    "repoLink": "https://github.com/jzarcoo/MazeSimulator",
-    "siteLink": "https://github.com/jzarcoo/MazeSimulator"
-  }, 
-  {
-    "img": "kanjijiapp.jpg",
+    "img": "kanjijiapp.webp",
     "title": "Kanji Ji App",
-    "description": "A kanji dictionary web app to help users learn and explore Japanese kanji characters.",
+    "description": "Full-stack kanji dictionary serving 2,000+ characters with readings, meanings, and stroke-order data. Built with Next.js, React, and Supabase.",
     "tools": ["Typescript", "Supabase", "Next.js", "React", "Tailwind"],
+    "features": [
+      "Searchable dictionary of 2,000+ kanji with readings and meanings",
+      "Stroke-order data rendered for every character",
+      "Supabase-backed persistence and full-text search",
+      "Server-rendered, responsive Next.js interface"
+    ],
     "repoLink": "https://kanji-ji.com/",
     "siteLink": "https://kanji-ji.com/"
-  }, 
+  },
   {
-    "img": "portalVaquita.png",
+    "img": "portalVaquita.webp",
     "title": "Portal Vaquita",
-    "description": "A scalable marketplace app using design patterns, sockets, threads, and unit testing",
+    "description": "Concurrent marketplace system with Publisher-Subscriber and Observer patterns, socket-based communication, thread synchronization, and a full unit test suite.",
     "tools": ["Java", "Maven"],
+    "features": [
+      "Publisher-Subscriber and Observer messaging between components",
+      "Socket-based client/server communication",
+      "Thread synchronization for concurrent marketplace operations",
+      "Full JUnit test suite covering the core flows"
+    ],
     "repoLink": "https://github.com/jzarcoo/Portal-Vaquita",
     "siteLink": "https://github.com/jzarcoo/Portal-Vaquita"
   },
   {
-    "img": "c6.jpeg",
+    "img": "c6.webp",
     "title": "Coyo6",
-    "description": "A virtual classroom system for UNAM students to address educational needs during the pandemic",
+    "description": "PHP/MariaDB virtual classroom built for UNAM during COVID-19. Handles course management, assignment submission, and student enrollment.",
     "tools": ["PHP", "MariaDB", "JavaScript", "Bootstrap", "CSS", "HTML"],
-    "repoLink" : "https://github.com/jzarcoo/Coyo6",
+    "features": [
+      "Course creation and management for instructors",
+      "Assignment submission and grading workflow",
+      "Student enrollment and roster management",
+      "Built and deployed for UNAM during COVID-19 remote instruction"
+    ],
+    "repoLink": "https://github.com/jzarcoo/Coyo6",
     "siteLink": "https://github.com/jzarcoo/Coyo6"
   },
   {
-    "img": "ocr.jpeg",
+    "img": "ocr.webp",
     "title": "Optical Character Recognition",
-    "description": "A project that captures or selects images, extracts text in real time using google_mlkit_text_recognition, and reads it aloud via text-to-speech (TTS).",
+    "description": "Flutter mobile app that extracts text from images in real time using Google ML Kit OCR and reads it aloud via TTS — built for accessibility use cases.",
     "tools": ["Dart", "Flutter"],
+    "features": [
+      "Real-time text extraction from the device camera with Google ML Kit",
+      "Text-to-speech playback of the recognized text",
+      "Designed for low-vision and accessibility use cases",
+      "Cross-platform Flutter build for Android and iOS"
+    ],
     "repoLink": "https://github.com/jzarcoo/ocr",
     "siteLink": "https://github.com/jzarcoo/ocr"
   }

@@ -1,51 +1,86 @@
 [
   {
-    "img": "exoarcade.png",
+    "img": "exoarcade.webp",
     "title": "Exo-Arcade",
-    "description": "An immersive educational game crafted to teach students about exoplanets through an array of fun mini-games",
+    "description": "Browser-based educational game about exoplanets with five mini-games and Gemini API-powered hints. Built for NASA's 2024 Space Apps Challenge.",
     "tools": ["JavaScript", "Python", "Bootstrap", "Gemini API", "CSS", "HTML"],
+    "features": [
+      "Five exoplanet-themed mini-games in the browser",
+      "Context-aware hints generated through the Gemini API",
+      "Educational content about exoplanet detection methods",
+      "Built for NASA's 2024 Space Apps Challenge"
+    ],
     "repoLink": "https://github.com/jzarcoo/EXO-ARCADE",
     "siteLink": "https://github.com/jzarcoo/EXO-ARCADE"
   },
   {
-    "img": "elescapedelosnuevecirculos.png",
+    "img": "elescapedelosnuevecirculos.webp",
     "title": "El Escape de los Nueve Círculos",
-    "description": "A maze-solving video game inspired by 'The Divine Comedy'",
+    "description": "Terminal-based maze game in C, inspired by Dante's Inferno. Implements custom maze generation, collision detection, and rendering without a game library.",
     "tools": ["C"],
+    "features": [
+      "Custom maze generation and terminal rendering",
+      "Collision detection built without a game engine",
+      "Nine levels themed after Dante's Inferno",
+      "Manual memory management in C"
+    ],
     "repoLink": "https://github.com/jzarcoo/El-Escape-de-los-Nueve-Circulos",
     "siteLink": "https://github.com/jzarcoo/El-Escape-de-los-Nueve-Circulos"
   },
   {
-    "img": "2048.png",
+    "img": "2048.webp",
     "title": "2048",
-    "description": "A classic arcade game with a modern twist",
+    "description": "React implementation of the 2048 sliding-tile puzzle. Handles tile merging logic, keyboard and touch input, and win/loss detection.",
     "tools": ["JavaScript", "HTML", "CSS", "React"],
+    "features": [
+      "Tile spawning, sliding, and merge logic",
+      "Keyboard and touch/swipe controls",
+      "Win and game-over detection",
+      "Live score tracking"
+    ],
     "repoLink": "https://github.com/jzarcoo/2048-game",
     "siteLink": "https://github.com/jzarcoo/2048-game"
   },
   {
-    "img": "frogger.jpeg",
+    "img": "frogger.webp",
     "title": "Frogger",
-    "description": "A classic arcade game with a modern twist",
+    "description": "Vanilla JavaScript Frogger clone with sprite-based animation, collision detection, and increasing difficulty levels.",
     "tools": ["JavaScript", "HTML", "CSS"],
+    "features": [
+      "Sprite-based animation on an HTML canvas",
+      "Lane-by-lane collision detection",
+      "Increasing difficulty across levels",
+      "Vanilla JavaScript, no framework"
+    ],
     "repoLink": "https://github.com/jzarcoo/Frogger",
     "siteLink": "https://github.com/jzarcoo/Frogger"
   },
   {
-    "img": "juego15.png",
+    "img": "juego15.webp",
     "title": "Juego 15",
-    "description": "A sliding puzzle game with a twist",
+    "description": "Browser-based 15-puzzle with randomized board generation, move counter, and solvability checking.",
     "tools": ["JavaScript", "HTML", "CSS"],
+    "features": [
+      "Randomized, always-solvable board generation",
+      "Move counter and solve detection",
+      "Solvability check using inversion parity",
+      "Keyboard and click controls"
+    ],
     "repoLink": "https://github.com/jzarcoo/ProyectosWeb2022",
     "siteLink": "https://github.com/jzarcoo/ProyectosWeb2022"
   },
   {
-    "img": "tetris.png",
+    "img": "tetris.webp",
     "title": "Tetris",
-    "description": "A classic arcade game with a modern twist",
+    "description": "Vanilla JavaScript Tetris with piece rotation, line clearing, and level-based speed progression.",
     "tools": ["JavaScript", "HTML", "CSS"],
+    "features": [
+      "Seven standard tetromino pieces with rotation",
+      "Line clearing and scoring",
+      "Level-based gravity and speed progression",
+      "Vanilla JavaScript on an HTML canvas"
+    ],
     "repoLink": "https://github.com/jzarcoo/ProyectosWeb2022",
     "siteLink": "https://github.com/jzarcoo/ProyectosWeb2022"
   }
 ]
-  

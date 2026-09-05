@@ -1,18 +1,46 @@
 [
   {
-    "img": "fakenewsdetection.png",
+    "img": "fakenewsdetection.webp",
     "title": "Fake News Detection",
-    "description": "A project for analyzing and predicting the veracity of news articles using supervised learning, NLP techniques, and transformer-based models such as BERT.",
+    "description": "Compared BERT, CNN, and LSTM architectures for fake news detection. Fine-tuned BERT achieved the highest F1-score on labeled news corpora, outperforming traditional NLP baselines.",
     "tools": ["Python", "TensorFlow", "Keras", "Plotly", "NetworkX", "Pandas", "NumPy", "Scikit-learn"],
+    "features": [
+      "Comparison of BERT, CNN, and LSTM classifiers on labeled news corpora",
+      "Fine-tuned BERT achieving the highest F1-score of the three models",
+      "Text preprocessing and feature pipelines with pandas and scikit-learn",
+      "Result and relationship analysis visualized with Plotly and NetworkX"
+    ],
     "repoLink": "https://github.com/jzarcoo/FakeNewsDetection",
     "siteLink": "https://www.canva.com/design/DAG-j3EfYGc/NVlZE4TYpKN2xCv9G9Uyxg/edit?utm_content=DAG-j3EfYGc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
   },
   {
-    "img": "kanjiji.png",
+    "img": "kanjiji.webp",
     "title": "Kanji Ji",
-    "description": "A project focused on predicting and identifying kanji characters using neural networks to facilitate Japanese language learning.",
+    "description": "Trained a CNN in PyTorch to recognize handwritten kanji characters. Model serves as the recognition backbone for the Kanji Ji production app.",
     "tools": ["Python", "PyTorch", "Streamlit", "Pandas", "NumPy", "Scikit-learn"],
+    "features": [
+      "Convolutional neural network for handwritten kanji recognition",
+      "Trained in PyTorch on a labeled kanji dataset",
+      "Interactive Streamlit demo for live predictions",
+      "Serves as the recognition backbone of the Kanji Ji app"
+    ],
     "repoLink": "https://kanji-ji.com/",
     "siteLink": "https://kanji-ji.com/"
+  },
+  {
+    "img": "frametoevent.webp",
+    "title": "Frame-to-Event Conversion Framework",
+    "description": "Converts conventional RGB video into asynchronous event streams (x, y, t, p) like those from neuromorphic cameras such as DVS and DAVIS, using a classical computer-vision pipeline rather than deep learning. Built to generate synthetic training data for spiking neural networks in automotive vision, and benchmarked against real DSEC event-camera recordings.",
+    "tools": ["Python", "Streamlit", "OpenCV", "NumPy", "PyTorch"],
+    "features": [
+      "Classical pipeline: grayscale, log intensity, Gaussian blur, frame differencing, and thresholding",
+      "Per-pixel polarity events (+1 / -1) with microsecond-precision timestamps",
+      "HDF5 event-stream output plus rendered MP4 visualizations",
+      "Configurable contrast threshold, minimum pixel count, and frame resizing",
+      "Side-by-side benchmarking against real DSEC event-camera ground truth",
+      "SpikeYOLO object-detection evaluation on the generated event data"
+    ],
+    "repoLink": "https://github.com/jzarcoo/Frame-to-Event-Conversion-Framework",
+    "siteLink": "https://frame-to-event-conversion-framework.streamlit.app/"
   }
 ]

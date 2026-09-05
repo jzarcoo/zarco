@@ -1,0 +1,31 @@
+[
+  {
+    "img": "mazesimulator.webp",
+    "title": "Maze Simulator",
+    "description": "Generates, solves, and visualizes mazes using BFS, DFS, Prim's, and Kruskal's. Includes step-by-step algorithm visualization.",
+    "tools": ["Java", "Maven"],
+    "features": [
+      "Maze generation with Prim's and Kruskal's minimum-spanning-tree algorithms",
+      "Pathfinding and traversal with breadth-first and depth-first search",
+      "Step-by-step visualization of each algorithm's progress",
+      "Adjustable grid size and animation speed"
+    ],
+    "repoLink": "https://github.com/jzarcoo/MazeSimulator",
+    "siteLink": "https://github.com/jzarcoo/MazeSimulator"
+  },
+  {
+    "img": "cpmath.webp",
+    "title": "Competitive Programming Math",
+    "description": "A web and mobile handbook of the math behind competitive programming — GCD and LCM, sieves, binary exponentiation, number theory, combinatorics, and game theory — with step-by-step interactive algorithm traces. Built and used while volunteering as a competitive programming instructor.",
+    "tools": ["Typescript", "React", "Expo"],
+    "features": [
+      "Reference pages for 25+ competitive-programming math topics",
+      "Step-by-step interactive traces of algorithms such as the Euclidean GCD",
+      "C++ implementations shown alongside each explanation",
+      "Interactive tools for binary exponentiation, GCD, and the Sieve of Eratosthenes",
+      "One Expo codebase running on web and mobile"
+    ],
+    "repoLink": "https://j-zarcoo-math.expo.app/",
+    "siteLink": "https://j-zarcoo-math.expo.app/"
+  }
+]

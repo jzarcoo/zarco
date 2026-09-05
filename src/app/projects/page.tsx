@@ -1,49 +1,27 @@
 import type { Metadata } from "next";
-import DarkModeButton from "@/components/DarkModeButton";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import ProjectSwipper from "@/components/ProjectSwipper";
-
-import projectsData from "../../../public/projects/projects.json";
-import gamesData from "../../../public/games/games.json";
-import machineLearningData from "../../../public/machinelearning/machinelearning.json";
+import ProjectShowcase from "@/components/ProjectShowcase";
 
 export const metadata: Metadata = {
 	title: "Projects",
 	description:
-		"Software engineering projects, machine learning research, and games by Antonio Zarco.",
+		"Algorithms, software engineering projects, machine learning research, and games by Antonio Zarco.",
 };
 
-export default function Projects() {
+export default function ProjectsPage() {
 	return (
-		<div className="text-gray-900 dark:text-gray-200 dark:bg-gray-900 bg-gray-200">
-			<Navbar />
+		<div className="flex w-full flex-col items-center gap-10">
+			<header className="glass-panel w-full max-w-7xl px-8 py-10 text-center">
+				<h1 className="text-glow text-3xl font-bold tracking-wide text-white md:text-4xl">
+					PROJECTS
+				</h1>
+				<p className="mx-auto mt-3 max-w-2xl text-blue-200">
+					Fourteen projects spanning algorithms and competitive-programming
+					math, concurrent systems, machine learning models, full-stack apps,
+					and games. Select any card for the full write-up.
+				</p>
+			</header>
 
-			<main id="main-content" className="pt-5">
-				<section id="projects">
-					<h1 className="text-center text-4xl font-bold mb-20 text-teal-600">
-						Projects
-					</h1>
-					<ProjectSwipper projects={projectsData} />
-				</section>
-
-				<section id="machine-learning">
-					<h2 className="text-center text-4xl font-bold m-20 text-teal-600">
-						Machine Learning
-					</h2>
-					<ProjectSwipper projects={machineLearningData} />
-				</section>
-
-				<section id="games">
-					<h2 className="text-center text-4xl font-bold m-20 text-teal-600">
-						Games
-					</h2>
-					<ProjectSwipper projects={gamesData} />
-				</section>
-			</main>
-
-			<DarkModeButton />
-			<Footer />
+			<ProjectShowcase />
 		</div>
 	);
 }
