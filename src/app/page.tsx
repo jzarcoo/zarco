@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import DisciplineCards from "@/components/DisciplineCards";
-import AlgorithmicDeepDive from "@/components/AlgorithmicDeepDive";
+import AboutTeaser from "@/components/AboutTeaser";
 import ProjectCard from "@/components/ProjectCard";
 import { featuredProjects } from "@/lib/projects";
 
@@ -40,20 +40,26 @@ export default function Home() {
 				className="z-10 w-full max-w-7xl"
 			>
 				<div className="mb-6 flex items-end justify-between gap-4">
-					<div>
-						<h2
-							id="featured-heading"
-							className="text-xl font-semibold text-blue-100"
-						>
-							Featured projects
-						</h2>
-						<p className="mt-1 text-sm text-blue-200/70">
-							A selection across engineering, ML, and games.
-						</p>
+					<div className="flex items-center gap-3">
+						<span
+							aria-hidden="true"
+							className="h-0.5 w-8 rounded-full bg-accent"
+						/>
+						<div>
+							<h2
+								id="featured-heading"
+								className="text-lg font-semibold text-ink"
+							>
+								Featured projects
+							</h2>
+							<p className="mt-1 text-sm text-muted">
+								A selection across engineering, ML, and games.
+							</p>
+						</div>
 					</div>
 					<Link
 						href="/projects"
-						className="shrink-0 text-sm font-medium text-blue-400 transition-colors hover:text-blue-300"
+						className="shrink-0 text-sm font-medium text-accent transition-colors hover:text-accent-strong"
 					>
 						All projects &rarr;
 					</Link>
@@ -66,7 +72,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<AlgorithmicDeepDive />
+			<AboutTeaser />
 		</div>
 	);
 }

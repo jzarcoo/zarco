@@ -15,14 +15,20 @@ export default function ProjectShowcase() {
 						aria-labelledby={`${category.key}-heading`}
 						className="scroll-mt-28"
 					>
-						<div className="glass-panel mb-6 px-6 py-4">
-							<h2
-								id={`${category.key}-heading`}
-								className="text-xl font-semibold text-blue-100"
-							>
-								{category.label}
-							</h2>
-							<p className="mt-1 text-sm text-blue-200/70">{category.blurb}</p>
+						<div className="mb-6 flex items-start gap-3">
+							<span
+								aria-hidden="true"
+								className="mt-2.5 h-0.5 w-8 shrink-0 rounded-full bg-accent"
+							/>
+							<div>
+								<h2
+									id={`${category.key}-heading`}
+									className="text-lg font-semibold text-ink"
+								>
+									{category.label}
+								</h2>
+								<p className="mt-1 text-sm text-muted">{category.blurb}</p>
+							</div>
 						</div>
 
 						<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

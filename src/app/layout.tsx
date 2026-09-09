@@ -57,12 +57,12 @@ export default function RootLayout({
 				/>
 			</head>
 			<body
-				className={`${inter.variable} ${jetbrainsMono.variable} relative min-h-screen`}
+				className={`${inter.variable} ${jetbrainsMono.variable} relative min-h-screen bg-white text-body`}
 			>
 				<a
 					href="#main-content"
 					className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4
-					           focus:z-[100] focus:rounded focus:bg-blue-500 focus:px-4 focus:py-2
+					           focus:z-[100] focus:rounded focus:bg-accent focus:px-4 focus:py-2
 					           focus:text-sm focus:text-white focus:shadow-lg focus:outline-none"
 				>
 					Skip to main content

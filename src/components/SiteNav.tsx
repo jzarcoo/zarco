@@ -4,10 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const items = [
-	{ href: "/", label: "HOME" },
-	{ href: "/about", label: "ABOUT" },
-	{ href: "/projects", label: "PROJECTS" },
-	{ href: "/contact", label: "CONTACT" },
+	{ href: "/", label: "Home" },
+	{ href: "/about", label: "About" },
+	{ href: "/projects", label: "Projects" },
+	{ href: "/contact", label: "Contact" },
 ] as const;
 
 function isActive(pathname: string, href: string): boolean {
@@ -21,9 +21,17 @@ export default function SiteNav() {
 	return (
 		<nav
 			aria-label="Primary"
-			className="z-10 mb-10 w-full max-w-3xl md:mb-14"
+			className="z-20 mb-12 flex w-full max-w-7xl flex-wrap items-center justify-center gap-x-7 gap-y-2 md:mb-16 md:justify-start md:gap-x-10"
 		>
-			<ul className="glass-panel mx-auto flex items-center justify-center gap-5 rounded-full px-5 py-3 text-xs font-semibold tracking-widest text-blue-100 sm:gap-8 sm:text-sm md:gap-14 md:text-base">
+			<Link
+				href="/"
+				aria-label="Antonio Zarco — home"
+				className="text-lg font-bold tracking-tight text-accent"
+			>
+				AZ
+			</Link>
+
+			<ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-sm font-medium sm:gap-x-8">
 				{items.map((item) => {
 					const active = isActive(pathname, item.href);
 					return (
@@ -32,7 +40,7 @@ export default function SiteNav() {
 								href={item.href}
 								data-active={active}
 								aria-current={active ? "page" : undefined}
-								className="nav-link inline-block py-1"
+								className="nav-link inline-block border-b-2 border-transparent pb-1 data-[active=true]:border-accent"
 							>
 								{item.label}
 							</Link>

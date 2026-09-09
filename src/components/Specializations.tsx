@@ -39,29 +39,28 @@ export default function Specializations() {
 			aria-labelledby="specializations-heading"
 			className="glass-panel w-full max-w-4xl px-6 py-8 md:px-10"
 		>
-			<h2
-				id="specializations-heading"
-				className="mb-6 text-xl font-semibold text-blue-100"
-			>
-				What I work on
-			</h2>
+			<div className="mb-6 flex items-center gap-3">
+				<span aria-hidden="true" className="h-0.5 w-8 rounded-full bg-accent" />
+				<h2
+					id="specializations-heading"
+					className="text-lg font-semibold text-ink"
+				>
+					What I work on
+				</h2>
+			</div>
 
 			<div className="grid grid-cols-1 gap-x-8 gap-y-6 text-left md:grid-cols-2">
 				{specializations.map(({ label, evidence }) => (
 					<div key={label}>
-						<p className="mb-1 text-sm font-semibold uppercase tracking-wider text-blue-300">
-							{label}
-						</p>
-						<p className="text-sm leading-relaxed text-blue-200/80">
-							{evidence}
-						</p>
+						<p className="mb-1 text-sm font-semibold text-ink">{label}</p>
+						<p className="text-sm leading-relaxed text-muted">{evidence}</p>
 					</div>
 				))}
 			</div>
 
 			<Link
 				href="/projects"
-				className="mt-8 inline-block rounded-md border border-blue-400/50 px-5 py-2 text-sm font-medium text-blue-100 transition-colors hover:bg-blue-500/10"
+				className="mt-8 inline-block rounded-full border border-line px-5 py-2 text-sm font-medium text-ink transition-colors hover:border-accent/40 hover:bg-accent-soft"
 			>
 				View projects &rarr;
 			</Link>

@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 :root {
-	--glass-bg: rgba(13, 27, 48, 0.65);
-	--glass-border: rgba(94, 162, 224, 0.4);
-	--glow-shadow: 0 0 25px rgba(59, 130, 246, 0.2);
-	--text-glow: 0 0 10px rgba(255, 255, 255, 0.5);
+	--bg: #ffffff;
+	--surface: #f5f8f6;
+	--surface-2: #edf3f0;
+	--border: #e6ece9;
+	--text: #33453f;
+	--text-muted: #657a72;
+	--heading: #12241f;
+	--accent: #0f8a5f;
+	--accent-strong: #0a6e49;
+	--accent-soft: #e4f3ec;
+	--card-shadow: 0 1px 2px rgba(15, 32, 28, 0.04),
+		0 18px 45px -22px rgba(15, 32, 28, 0.16);
 }
 
 html,
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 * {
@@ -20,45 +29,81 @@ body {
 }
 
 body {
-	background-color: #050b14;
-	color: #e2e8f0;
+	background-color: var(--bg);
+	color: var(--text);
 	overflow-x: hidden;
 	font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* Soft organic green shapes flowing across the page — a calm decorative
+   backdrop, well behind the content. */
+body::before,
+body::after {
+	content: "";
+	position: fixed;
+	z-index: -1;
+	pointer-events: none;
+	border-radius: 50%;
+	filter: blur(90px);
+}
+
+body::before {
+	top: -14rem;
+	right: -12rem;
+	width: 46rem;
+	height: 42rem;
+	background: radial-gradient(
+		circle at 40% 40%,
+		rgba(45, 212, 191, 0.22),
+		rgba(110, 231, 183, 0.14) 45%,
+		transparent 72%
+	);
+}
+
+body::after {
+	bottom: -20rem;
+	left: -16rem;
+	width: 44rem;
+	height: 40rem;
+	background: radial-gradient(
+		circle at 55% 45%,
+		rgba(16, 185, 129, 0.14),
+		rgba(167, 243, 208, 0.12) 50%,
+		transparent 75%
+	);
 }
 
 @layer components {
+	/* Clean product-style card: white, soft diffuse shadow, subtle border,
+	   generous radius. No glassmorphism, no glow. */
 	.glass-panel {
-		background: var(--glass-bg);
-		backdrop-filter: blur(12px);
-		-webkit-backdrop-filter: blur(12px);
-		border: 1px solid var(--glass-border);
-		box-shadow: var(--glow-shadow);
-		border-radius: 16px;
+		background: #ffffff;
+		border: 1px solid var(--border);
+		box-shadow: var(--card-shadow);
+		border-radius: 20px;
 		overflow: hidden;
 	}
 
 	.glass-header {
-		background: linear-gradient(
-			90deg,
-			rgba(30, 58, 95, 0.8) 0%,
-			rgba(13, 27, 48, 0.8) 100%
-		);
-		border-bottom: 1px solid var(--glass-border);
+		background: var(--surface);
+		border-bottom: 1px solid var(--border);
 	}
 
 	.nav-link {
-		transition: color 0.3s ease, text-shadow 0.3s ease;
-		text-shadow: 0 0 5px transparent;
+		color: var(--text-muted);
+		transition: color 0.25s ease;
 	}
 
 	.nav-link:hover,
 	.nav-link[data-active="true"] {
-		color: #93c5fd;
-		text-shadow: 0 0 10px rgba(147, 197, 253, 0.8);
+		color: var(--accent);
 	}
 
+	/* Kept as a harmless no-op so existing markup doesn't need sweeping. */
 	.text-glow {
-		text-shadow: var(--text-glow);
+		text-shadow: none;
 	}
 
 	.math-font {
@@ -69,32 +114,38 @@ body {
 	.code-block {
 		font-family: var(--font-mono), ui-monospace, monospace;
 		font-size: 0.8rem;
-		color: #a5b4fc;
+		color: var(--text);
 	}
 
 	.blueprint-grid {
-		background-image: linear-gradient(#4a80b0 1px, transparent 1px),
-			linear-gradient(90deg, #4a80b0 1px, transparent 1px);
+		background-image: linear-gradient(
+				rgba(11, 122, 84, 0.5) 1px,
+				transparent 1px
+			),
+			linear-gradient(90deg, rgba(11, 122, 84, 0.5) 1px, transparent 1px);
 		background-size: 20px 20px;
 	}
 }
 
 /* Visible focus indicator for keyboard navigation (WCAG 2.4.7) */
 :focus-visible {
-	outline: 2px solid #93c5fd;
+	outline: 2px solid var(--accent);
 	outline-offset: 2px;
 	border-radius: 4px;
 }
 
 ::-webkit-scrollbar {
-	width: 6px;
+	width: 8px;
 }
 ::-webkit-scrollbar-track {
 	background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-	background: rgba(94, 162, 224, 0.3);
-	border-radius: 3px;
+	background: #cbddd5;
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #b3ccc1;
 }
 
 @media (prefers-reduced-motion: reduce) {

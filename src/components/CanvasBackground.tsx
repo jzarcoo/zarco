@@ -3,9 +3,10 @@
 import { useEffect, useRef } from "react";
 
 /**
- * Animated node-network background — a dependency-free 2D-canvas take on the
- * Three.js particle field from the design reference. Sits fixed behind all
- * content; glass panels let it show through. Respects prefers-reduced-motion.
+ * Animated node-network background. Sits fixed behind all content as a subtle,
+ * organic decorative layer in green/teal tones on the white page. Its logic and
+ * behaviour are unchanged — only the presentation (colour, intensity) is tuned
+ * so it never competes with the content. Respects prefers-reduced-motion.
  */
 export default function CanvasBackground() {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -67,8 +68,8 @@ export default function CanvasBackground() {
 					const b = nodes[j];
 					const dist = Math.hypot(a.x - b.x, a.y - b.y);
 					if (dist < LINK_DISTANCE) {
-						const alpha = 0.25 * (1 - dist / LINK_DISTANCE);
-						ctx.strokeStyle = `rgba(59, 130, 246, ${alpha.toFixed(3)})`;
+						const alpha = 0.2 * (1 - dist / LINK_DISTANCE);
+						ctx.strokeStyle = `rgba(15, 138, 95, ${alpha.toFixed(3)})`;
 						ctx.lineWidth = 1;
 						ctx.beginPath();
 						ctx.moveTo(a.x, a.y);
@@ -78,7 +79,7 @@ export default function CanvasBackground() {
 				}
 			}
 
-			ctx.fillStyle = "rgba(147, 197, 253, 0.85)";
+			ctx.fillStyle = "rgba(15, 138, 95, 0.5)";
 			for (const n of nodes) {
 				ctx.beginPath();
 				ctx.arc(n.x, n.y, 1.6, 0, Math.PI * 2);
@@ -114,10 +115,10 @@ export default function CanvasBackground() {
 		<canvas
 			ref={canvasRef}
 			aria-hidden="true"
-			className="pointer-events-none fixed inset-0 -z-10 h-full w-full"
+			className="pointer-events-none fixed inset-0 -z-10 h-full w-full opacity-70"
 			style={{
 				background:
-					"radial-gradient(ellipse at 50% -10%, #0b1f38 0%, #050b14 55%)",
+					"radial-gradient(60rem 42rem at 82% 6%, rgba(11, 122, 84, 0.06), transparent 70%)",
 			}}
 		/>
 	);

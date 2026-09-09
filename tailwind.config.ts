@@ -13,7 +13,17 @@ export default {
 				mono: ["var(--font-mono)", "ui-monospace", "monospace"],
 			},
 			colors: {
-				ink: "#050b14",
+				// Bright, professional, academic-tech palette. Green is the accent.
+				ink: "#12241f", // headings — soft near-black with a green cast
+				body: "#33453f", // body text — dark green-blue
+				muted: "#657a72", // secondary text
+				line: "#e6ece9", // borders / dividers
+				surface: "#f5f8f6", // slightly warm off-white surfaces
+				accent: {
+					DEFAULT: "#0f8a5f", // friendly emerald that pops on white
+					strong: "#0a6e49", // hover / pressed / small text
+					soft: "#e4f3ec", // tint background for badges / chips / hovers
+				},
 			},
 		},
 	},
