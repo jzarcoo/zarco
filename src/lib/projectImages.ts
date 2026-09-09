@@ -16,6 +16,7 @@ import ocr from "../../public/ocr.webp";
 import portalVaquita from "../../public/portalVaquita.webp";
 import tetris from "../../public/tetris.webp";
 import me from "../../public/me.webp";
+import githubOctocat from "../../public/github.gif";
 
 /**
  * Static-import map keyed by the `img` filename used in the project JSON.
@@ -41,6 +42,7 @@ const projectImages: Record<string, StaticImageData> = {
 };
 
 export const meImage = me;
+export const githubImage = githubOctocat;
 
 export function imageFor(filename: string): StaticImageData | undefined {
 	return projectImages[filename];
